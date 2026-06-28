@@ -33,9 +33,9 @@ This improved system responsiveness and reduced delays in normal AMR processing.
 **System area:** AMR Console  
 **Release type:** Environment correctness and operational usability
 
-The Comms Monitor link in the AMR Console used a fixed website address. This meant that the candidate testing system could open the production Comms Monitor instead of its own local version.
+The Comms Monitor link in the AMR Console used a fixed website address. This became a problem when migrating from amr.utilityforensics.co.za to amr.uf-africa.co.za
 
-The link was changed to use a relative path, so each environment opens the correct Comms Monitor for that environment. This supports safer candidate testing and reduces the chance of accidentally mixing candidate and production operations.
+The link was changed to use a relative path, so each environment opens the correct Comms Monitor for that environment. In addition to supporting amr.uf-africa.co.za, it also supports candidate and production releases.
 
 ---
 

@@ -11,7 +11,7 @@ It is intentionally non-technical and does not include customer names, account n
 | Release | Status | System Area | Summary |
 |---|---|---|---|
 | AMR-R0001 | Released | AMR Server / Database | Meter reading processing performance improvement. |
-| AMR-R0002 | Released | AMR Console | Comms Monitor link corrected for candidate and live environments. |
+| AMR-R0002 | Released | AMR Console | Comms Monitor link corrected for migrating to amr-uf-africa.co.za. |
 
 ---
 

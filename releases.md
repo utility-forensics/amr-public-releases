@@ -1,6 +1,16 @@
-# AMR Public Release Register
+<h1 class="amr-page-title">AMR Public Release Register</h1>
 
 <style>
+  .amr-page-title {
+    color: #176b98;
+    background: #bfe4f8;
+    padding: 12px 16px;
+    border-left: 7px solid #176b98;
+    border-radius: 6px;
+    font-size: 2em;
+    font-weight: 600;
+  }
+
   .amr-note {
     background: #f6fbff;
     border-left: 5px solid #8fd3ff;
@@ -114,7 +124,8 @@ It is intentionally non-technical and does not include customer names, account n
 
 **Status:** <span class="amr-status">Released</span>  
 **System area:** AMR Server / Database  
-**Release type:** Performance and reliability improvement
+**Release type:** Performance and reliability improvement  
+**Release date:** 2026-06-28
 
 The AMR system was experiencing slow processing when checking and handling meter reading requests. The cause was traced to database lookups on a large meter reading table that were not using an appropriate index. A database index was added so that the system can find pending meter reading requests much faster.
 
@@ -126,7 +137,8 @@ This improved system responsiveness and reduced delays in normal AMR processing.
 
 **Status:** <span class="amr-status">Released</span>  
 **System area:** AMR Console  
-**Release type:** Environment correctness and operational usability
+**Release type:** Environment correctness and operational usability  
+**Release date:** 2026-06-28
 
 The Comms Monitor link in the AMR Console used a fixed website address. This became a problem when migrating from amr.utilityforensics.co.za to amr.uf-africa.co.za.
 

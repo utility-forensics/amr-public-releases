@@ -10,7 +10,11 @@
   }
 
   .amr-summary-table {
-    width: 100%;
+    display: table !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    table-layout: fixed;
     border-collapse: collapse;
     margin: 18px 0 28px 0;
   }
@@ -27,6 +31,27 @@
     border: 1px solid #c9e8c9;
     padding: 10px;
     vertical-align: top;
+    word-wrap: break-word;
+  }
+
+  .amr-summary-table th:nth-child(1),
+  .amr-summary-table td:nth-child(1) {
+    width: 14%;
+  }
+
+  .amr-summary-table th:nth-child(2),
+  .amr-summary-table td:nth-child(2) {
+    width: 14%;
+  }
+
+  .amr-summary-table th:nth-child(3),
+  .amr-summary-table td:nth-child(3) {
+    width: 22%;
+  }
+
+  .amr-summary-table th:nth-child(4),
+  .amr-summary-table td:nth-child(4) {
+    width: 50%;
   }
 
   .amr-release-heading {

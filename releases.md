@@ -11,7 +11,7 @@ It is intentionally non-technical and does not include customer names, account n
 | Release | Status | System Area | Summary |
 |---|---|---|---|
 | AMR-R0001 | Released | AMR Server / Database | Meter reading processing performance improvement. |
-| AMR-R0002 | Candidate / Pending live confirmation | AMR Console | Comms Monitor link corrected for candidate and live environments. |
+| AMR-R0002 | Released | AMR Console | Comms Monitor link corrected for candidate and live environments. |
 
 ---
 
@@ -29,7 +29,7 @@ This improved system responsiveness and reduced delays in normal AMR processing.
 
 ## AMR-R0002 - Relative Comms Monitor Link
 
-**Status:** Candidate / Pending live confirmation  
+**Status:** Released  
 **System area:** AMR Console  
 **Release type:** Environment correctness and operational usability
 

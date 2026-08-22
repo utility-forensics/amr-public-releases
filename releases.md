@@ -81,7 +81,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>AMR-R0008</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing, profile presentation, PDF output, Technical Pages, login/session handling, and release reliability safeguards.</td></tr>
+    <tr><td><strong>AMR-R0008 / LR 2.0</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing and Bills workflows, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger release safeguards.</td></tr>
     <tr><td><strong>AMR-R0007</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
     <tr><td><strong>AMR-R0006</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile totals reliability improvement for completed reads that report meter-clock warnings.</td></tr>
     <tr><td><strong>AMR-R0005</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics.</td></tr>
@@ -94,16 +94,59 @@ It is intentionally non-technical and does not include customer names, account n
 
 ---
 
-<h2 class="amr-release-heading">AMR-R0008 - LR 2.0 AMR Console Release</h2>
+<h2 class="amr-release-heading">AMR-R0008 / LR 2.0 - Major AMR Console Release</h2>
 
 **Status:** <span class="amr-status">Released</span>  
 **System area:** AMR Console  
 **Release type:** Major application, usability, reliability and release-control improvement  
 **Release date:** 2026-08-22
 
-LR 2.0 is a substantial AMR Console production release. It improves the billing and Bills interfaces, Bill Wizard workflow, Profile presentation, formal bill PDF output, login/session handling, and Technical Pages presentation.
+LR 2.0 is a substantial AMR Console production release focused on improving day-to-day operator workflows, billing and Profile presentation, formal customer-facing output, and the reliability of production releases.
 
-The release also strengthens production release safety and verification. It was promoted through TEST and two Release Candidate acceptance gates before the exact accepted production version was placed into service. Customer email delivery remains disabled pending separate commissioning.
+### Billing and Bills
+
+- Improved the Bills area so historic and current bills are easier to review.
+- Improved Bill Wizard usability, including clearer account/date selection and more responsive loading behaviour.
+- Improved bill presentation and handling of saved bills.
+- Strengthened sliding-block tariff calculation behaviour and added regression protection around the corrected calculation paths.
+- Improved the consistency between Billing views, bill preparation and saved-bill presentation.
+
+### Profiles and meter information
+
+- Improved Profile viewing and chart presentation, including better handling of chart data and Profile display dependencies.
+- Improved Technical Pages history so operators can select and review more than only the most recent technical snapshot.
+- Improved electrical-unit presentation in Technical Pages, including clear current, voltage and angle units.
+- Improved phasor visualisation and tooltip presentation.
+
+### Formal PDF presentation
+
+- Improved formal bill PDF presentation, including Utility Forensics branding, borders, spacing and footer layout.
+- Improved consistency between the on-screen saved-bill view and the formal PDF output.
+- Improved multi-bill preparation so operator review and PDF generation are more predictable.
+
+### Login, session and operational usability
+
+- Improved login and session handling while retaining compatibility with the existing AMR Console.
+- Added safer session-support foundations for future operational improvements.
+- Improved Administrator loading feedback for larger meter lists.
+- Removed several sources of unnecessary page jumping and presentation inconsistency in operator workflows.
+
+### Email and traceability groundwork
+
+- Added the application groundwork for more traceable bill-email processing and safer future mail commissioning.
+- Customer email delivery remains disabled until separately commissioned and approved; LR 2.0 did not activate unattended customer mail.
+
+### Reliability and release safeguards
+
+- Expanded automated regression coverage across billing, Bills, Profiles, PDF presentation, Technical Pages, login/session and supporting workflows.
+- Introduced clearer TEST and Release Candidate validation boundaries and required a second RC verification of the exact production merge before LIVE deployment.
+- Added a controlled LIVE Maintenance Mode that blocks public application access during deployment while allowing safe origin validation.
+- Added public static-asset integrity checks before reopening the application, including protection against stale CDN assets after a release.
+- Improved rollback preparation and release evidence so production changes can be verified against exact accepted source and runtime state.
+
+### Management outcome
+
+The result is a more usable and more predictable AMR Console for operators, with stronger billing and Profile presentation, improved formal customer-facing documents, and a substantially more controlled production release process. The exact LR 2.0 production package passed TEST, two RC acceptance stages, controlled LIVE deployment and final browser/PDF acceptance before being declared released.
 
 ---
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: AMR Public Release Register
+---
+
 <h1 class="amr-page-title">AMR Public Release Register</h1>
 
 <style>
@@ -10,7 +15,6 @@
     font-size: 2em;
     font-weight: 600;
   }
-
   .amr-note {
     background: #f6fbff;
     border-left: 5px solid #8fd3ff;
@@ -18,7 +22,6 @@
     margin: 16px 0;
     border-radius: 6px;
   }
-
   .amr-summary-table {
     display: table !important;
     width: 100% !important;
@@ -28,14 +31,12 @@
     border-collapse: collapse;
     margin: 18px 0 28px 0;
   }
-
   .amr-summary-table th {
     background: #d9f0ff;
     border: 1px solid #b9dff5;
     padding: 10px;
     text-align: left;
   }
-
   .amr-summary-table td {
     background: #e7f8e7;
     border: 1px solid #c9e8c9;
@@ -43,27 +44,10 @@
     vertical-align: top;
     word-wrap: break-word;
   }
-
-  .amr-summary-table th:nth-child(1),
-  .amr-summary-table td:nth-child(1) {
-    width: 14%;
-  }
-
-  .amr-summary-table th:nth-child(2),
-  .amr-summary-table td:nth-child(2) {
-    width: 14%;
-  }
-
-  .amr-summary-table th:nth-child(3),
-  .amr-summary-table td:nth-child(3) {
-    width: 22%;
-  }
-
-  .amr-summary-table th:nth-child(4),
-  .amr-summary-table td:nth-child(4) {
-    width: 50%;
-  }
-
+  .amr-summary-table th:nth-child(1), .amr-summary-table td:nth-child(1) { width: 14%; }
+  .amr-summary-table th:nth-child(2), .amr-summary-table td:nth-child(2) { width: 14%; }
+  .amr-summary-table th:nth-child(3), .amr-summary-table td:nth-child(3) { width: 22%; }
+  .amr-summary-table th:nth-child(4), .amr-summary-table td:nth-child(4) { width: 50%; }
   .amr-release-heading {
     color: #2b8fc6;
     background: #d9f0ff;
@@ -72,7 +56,6 @@
     border-radius: 6px;
     margin-top: 28px;
   }
-
   .amr-status {
     display: inline-block;
     background: #e7f8e7;
@@ -84,9 +67,9 @@
 </style>
 
 <div class="amr-note">
-This page records high-level AMR system releases and improvements for management visibility.
+This page records high-level AMR system releases and production improvements for management visibility.
 <br><br>
-It is intentionally non-technical and does not include customer names, account numbers, database output, server details, internal logs, or private operational information.
+It is intentionally non-technical and does not include customer names, account numbers, meter identifiers, database output, server details, internal logs, credentials, screenshots, or private operational evidence.
 </div>
 
 ---
@@ -95,28 +78,110 @@ It is intentionally non-technical and does not include customer names, account n
 
 <table class="amr-summary-table">
   <thead>
-    <tr>
-      <th>Release</th>
-      <th>Status</th>
-      <th>System Area</th>
-      <th>Summary</th>
-    </tr>
+    <tr><th>Release</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td><strong>AMR-R0001</strong></td>
-      <td><span class="amr-status">Released</span></td>
-      <td>AMR Server / Database</td>
-      <td>Meter reading processing performance improvement.</td>
-    </tr>
-    <tr>
-      <td><strong>AMR-R0002</strong></td>
-      <td><span class="amr-status">Released</span></td>
-      <td>AMR Console</td>
-      <td>Comms Monitor link corrected for migrating to amr.uf-africa.co.za.</td>
-    </tr>
+    <tr><td><strong>AMR-R0008</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing, profile presentation, PDF output, Technical Pages, login/session handling, and release reliability safeguards.</td></tr>
+    <tr><td><strong>AMR-R0007</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
+    <tr><td><strong>AMR-R0006</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile totals reliability improvement for completed reads that report meter-clock warnings.</td></tr>
+    <tr><td><strong>AMR-R0005</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics.</td></tr>
+    <tr><td><strong>AMR-R0004</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling.</td></tr>
+    <tr><td><strong>AMR-R0003</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Profile totals integrity improvement to ensure updates remain scoped to the intended meter.</td></tr>
+    <tr><td><strong>AMR-R0002</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor link corrected for the current candidate and production environments.</td></tr>
+    <tr><td><strong>AMR-R0001</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0008 - LR 2.0 AMR Console Release</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Console  
+**Release type:** Major application, usability, reliability and release-control improvement  
+**Release date:** 2026-08-22
+
+LR 2.0 is a substantial AMR Console production release. It improves the billing and Bills interfaces, Bill Wizard workflow, Profile presentation, formal bill PDF output, login/session handling, and Technical Pages presentation.
+
+The release also strengthens production release safety and verification. It was promoted through TEST and two Release Candidate acceptance gates before the exact accepted production version was placed into service. Customer email delivery remains disabled pending separate commissioning.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0007 - EDMI Atlas2 Profile Reliability</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Server  
+**Release type:** Meter protocol reliability and data-quality improvement  
+**Release date:** 2026-08-05
+
+The AMR Server's EDMI Atlas2 Profile handling was improved to make interval selection and continued Profile reading more reliable. The release includes validated energy scaling, whole-second timestamp handling, and improved continuation when reading the next available interval.
+
+These changes improve reliable collection of Atlas2 interval data without changing Atlas1 behaviour, billing logic, or meter configuration.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0006 - Metcom Clock/Total Recalculation Reliability</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Server  
+**Release type:** Meter data-processing reliability improvement  
+**Release date:** 2026-08-03
+
+Metcom Profile processing was improved so that a successfully completed read can still recalculate interval totals when the meter reports a clock warning. The system keeps the warning visible while allowing valid completed Profile data to proceed through the normal calculation path.
+
+The change improves recovery of correct totals from valid meter reads while retaining the existing safety checks for incomplete or uncertain reads.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0005 - Metcom Profile Continuity Across Meter Gaps</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Server  
+**Release type:** Profile reading reliability and diagnostics improvement  
+**Release date:** 2026-07-31
+
+Metcom Profile reading was improved to continue correctly across valid meter outage or no-data windows instead of treating every such response as a generic communications failure. When Profile data resumes, the normal calculation sequence continues from actual meter data without creating artificial intervals.
+
+The same release also improved safe communications diagnostics for troubleshooting while keeping sensitive meter information protected.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0004 - Comms Monitor and Profile Reload Improvements</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Console  
+**Release type:** Operational usability and meter-support improvement  
+**Release date:** 2026-07-29
+
+The AMR Console Comms Monitor was modernised and its Profile reload workflow improved. Operators can specify the Profile start date for a controlled reload, while request handling was aligned with the normal AMR priority queue.
+
+This provides better visibility and control when investigating or recovering meter Profile data.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0003 - Profile Totals Integrity</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Server  
+**Release type:** Data integrity and reliability improvement  
+**Release date:** 2026-07-29
+
+Profile totals updates were tightened so that an update is explicitly scoped to the intended meter and interval. This prevents an identifier shared by different meters from allowing one meter's totals update to affect another meter.
+
+The improvement strengthens the integrity of Profile totals processing without changing the underlying totals calculation method.
+
+---
+
+<h2 class="amr-release-heading">AMR-R0002 - Relative Comms Monitor Link</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Console  
+**Release type:** Environment correctness and operational usability  
+**Release date:** 2026-06-28
+
+The Comms Monitor link in the AMR Console used a fixed website address. This became a problem when migrating to the current production address.
+
+The link was changed to use a relative path, so each environment opens the correct Comms Monitor for that environment. This supports both candidate and production releases.
 
 ---
 
@@ -133,21 +198,8 @@ This improved system responsiveness and reduced delays in normal AMR processing.
 
 ---
 
-<h2 class="amr-release-heading">AMR-R0002 - Relative Comms Monitor Link</h2>
-
-**Status:** <span class="amr-status">Released</span>  
-**System area:** AMR Console  
-**Release type:** Environment correctness and operational usability  
-**Release date:** 2026-06-28
-
-The Comms Monitor link in the AMR Console used a fixed website address. This became a problem when migrating from amr.utilityforensics.co.za to amr.uf-africa.co.za.
-
-The link was changed to use a relative path, so each environment opens the correct Comms Monitor for that environment. In addition to supporting amr.uf-africa.co.za, it also supports candidate and production releases.
-
----
-
 ## Notes
 
-The detailed technical evidence, private release notes, implementation details, pull requests, screenshots, SQL checks, and rollback notes are kept in private Utility Forensics repositories.
+The detailed technical evidence, private release notes, exact source identities, implementation details, validation logs, screenshots, SQL checks, and rollback notes are kept in private Utility Forensics repositories.
 
-This public register is only a management-facing summary.
+This register is a management-facing release history only.

@@ -81,6 +81,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0009 / LR 2.1</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Billing and Council-comparison refinement release covering modern Council Bill workflows, audited side-by-side comparisons, improved PDF/CSV output, standardized time-of-use presentation, clearer Profile statistics, reactive meter-total integrity, and corrected Network Surcharge handling.</td></tr>
     <tr><td><strong>AMR-R0008 / LR 2.0</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing and Bills workflows, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger release safeguards.</td></tr>
     <tr><td><strong>AMR-R0007</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
     <tr><td><strong>AMR-R0006</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile totals reliability improvement for completed reads that report meter-clock warnings.</td></tr>
@@ -91,6 +92,85 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0009 / LR 2.1 - Billing and Council Comparison Refinement</h2>
+
+**Status:** <span class="amr-status">Released</span>  
+**System area:** AMR Console  
+**Release type:** Billing review, comparison, presentation and tariff-handling improvement  
+**Release date:** 2026-08-31
+
+LR 2.1 is a focused follow-up to LR 2.0. It improves how Council electricity bills are entered, reviewed and compared with Utility Forensics calculations, while also improving Profile statistics, meter-total presentation and Network Surcharge handling.
+
+### Council Bill workflow
+
+- Modernised Council Bill entry, editing and validation.
+- Standardised new and edited Council Bill VAT handling at the current 15% rate while preserving historical stored VAT when older bills are viewed.
+- Improved the grouping and presentation of Council Bill charge categories.
+- Added stronger validation so incomplete or inconsistent draft bill information is identified before use.
+
+### Utility Forensics vs Council Bill comparison
+
+- Added a modern side-by-side comparison between the Council Bill and a fresh Utility Forensics recalculation for the same account, billing period and Council tariff.
+- Added clear tariff verification states: **MATCH**, **MISMATCH** and **UNVERIFIED**.
+- Presents the Utility Forensics and Council values in parallel for easier operator and management review.
+- Shows signed differences so over- and under-positions are clear rather than being reduced to absolute values.
+- Aligns the left and right comparison columns for **Description, Units, Rate and Amount** to make detailed comparisons easier to read.
+- Keeps factual differences visible when one side contains a charge that is absent on the other side.
+
+### Comparison summary and export
+
+- Added a Bill Comparison Summary covering the principal energy, demand and financial totals.
+- Shows Utility Forensics, Council and Difference values in a compact management-friendly format.
+- Includes signed percentage difference for the financial comparison.
+- Added an 11-column CSV export so comparison results can be reviewed further in spreadsheet or audit workflows.
+
+### Comparison PDF output
+
+- Reworked the comparison PDF into a continuous landscape presentation rather than separate or awkwardly paginated bill panels.
+- Uses a balanced Utility Forensics / Council layout with consistent internal column widths.
+- Improved wrapping and alignment so long descriptions do not disturb the Units, Rate or Amount columns.
+- Keeps the comparison summary and difference information together with the detailed bill comparison.
+
+### Time-of-use terminology and ordering
+
+- Standardised South African time-of-use terminology to **Peak, Standard, Off-Peak**.
+- Replaced the legacy presentation term **Shoulder** with **Standard** where it represented the same middle time-of-use band.
+- Standardised categorical bill presentation order to **Peak → Standard → Off-Peak**.
+- Preserved chronological ordering on time-based Profile graphs, where clock sequence remains more appropriate than categorical tariff order.
+
+### Meter Totals and reactive-energy presentation
+
+- Improved cumulative kvarh Meter Totals so valid start and end meter readings are preserved independently of the separate rule used to calculate chargeable reactive energy.
+- Unavailable cumulative reactive readings are now treated as unavailable rather than being replaced with artificial zero values.
+- Corrected Council Comparison usage presentation so missing reactive boundaries display derived usage as **N/A**, never an invented **0.000**.
+- Valid kWh and kvarh boundary differences continue to be calculated and displayed normally.
+
+### Profile statistics
+
+- Modernised the Profile **Stats on kW, kVA & PF** presentation.
+- Presents highest, average and lowest values in a clearer card layout.
+- Improves visual distinction between kW, kVA and power factor while retaining the established underlying statistics.
+
+### Network Surcharge handling
+
+- Corrected City Power Network Surcharge treatment for the affected business tariffs so applicable business consumption is charged according to the configured surcharge rate rather than being incorrectly gated by a residential-style threshold.
+- Corrected residential Network Surcharge handling so the first 500 kWh remains exempt and only consumption above 500 kWh is allocated to the surcharge.
+- Preserved the separate existing percentage-surcharge relationships and did not alter unrelated tariff rates, saved bills or Council Bill records.
+- The change is implemented through a generic excess-above-threshold rule rather than customer-specific billing logic.
+
+### Reliability and release assurance
+
+- Added focused automated coverage for Council Bill modernisation, comparison PDF lifecycle, time-of-use presentation, reactive Meter Totals and Network Surcharge behaviour.
+- The final LR 2.1 package received a full source-to-feature provenance review before release, including all production changes and shared AMR/KT paths.
+- A pre-release review identified and corrected the missing-reactive-boundary presentation issue before LIVE deployment.
+- The exact accepted production package then passed final Release Candidate validation and controlled LIVE commissioning before release acceptance.
+
+### Management outcome
+
+LR 2.1 makes Council-bill auditing substantially easier to understand and present. Operators can compare Council and Utility Forensics results side by side, export the comparison, generate a cleaner customer-facing PDF, use standard South African TOU terminology, and rely on improved reactive Meter Totals and Network Surcharge treatment. The release is intentionally focused: separate Bill Import, deeper kVA/PF/kvarh forensic work and historical reread/recovery work are not part of LR 2.1.
 
 ---
 

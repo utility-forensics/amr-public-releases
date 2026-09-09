@@ -81,6 +81,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0010 / LR 2.2</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger.</td></tr>
     <tr><td><strong>AMR-R0009 / LR 2.1</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Billing and Council-comparison refinement release covering modern Council Bill workflows, audited side-by-side comparisons, improved PDF/CSV output, standardized time-of-use presentation, clearer Profile statistics, reactive meter-total integrity, and corrected Network Surcharge handling.</td></tr>
     <tr><td><strong>AMR-R0008 / LR 2.0</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing and Bills workflows, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger release safeguards.</td></tr>
     <tr><td><strong>AMR-R0007</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
@@ -92,6 +93,19 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0010 / LR 2.2 - Sliding-Scale Billing Integrity</h2>
+
+**Status:** <span class="amr-status">Released</span><br>
+**System area:** AMR Console<br>
+**Release type:** Focused billing correctness and integrity improvement<br>
+**Release date:** 2026-09-09
+
+LR 2.2 improves sliding-scale billing so energy is allocated consistently across tariff blocks. Network Surcharge uses the full eligible consumption independently, and percentage surcharges follow the reconciled charges. This improves agreement between energy quantities and the resulting bill totals.
+
+Additional integrity checks prevent a monthly bill from being saved when its energy allocation cannot be reconciled, while provisional calculations remain available for review. The release preserves existing saved bills; any operational correction of an earlier bill remains a separate authorised action.
 
 ---
 

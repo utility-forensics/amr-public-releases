@@ -44,10 +44,11 @@ title: AMR Public Release Register
     vertical-align: top;
     word-wrap: break-word;
   }
-  .amr-summary-table th:nth-child(1), .amr-summary-table td:nth-child(1) { width: 14%; }
-  .amr-summary-table th:nth-child(2), .amr-summary-table td:nth-child(2) { width: 14%; }
-  .amr-summary-table th:nth-child(3), .amr-summary-table td:nth-child(3) { width: 22%; }
-  .amr-summary-table th:nth-child(4), .amr-summary-table td:nth-child(4) { width: 50%; }
+  .amr-summary-table th:nth-child(1), .amr-summary-table td:nth-child(1) { width: 13%; }
+  .amr-summary-table th:nth-child(2), .amr-summary-table td:nth-child(2) { width: 12%; }
+  .amr-summary-table th:nth-child(3), .amr-summary-table td:nth-child(3) { width: 12%; }
+  .amr-summary-table th:nth-child(4), .amr-summary-table td:nth-child(4) { width: 18%; }
+  .amr-summary-table th:nth-child(5), .amr-summary-table td:nth-child(5) { width: 45%; }
   .amr-release-heading {
     color: #2b8fc6;
     background: #d9f0ff;
@@ -78,19 +79,19 @@ It is intentionally non-technical and does not include customer names, account n
 
 <table class="amr-summary-table">
   <thead>
-    <tr><th>Release</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
+    <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>AMR-R0010 / LR 2.2</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger.</td></tr>
-    <tr><td><strong>AMR-R0009 / LR 2.1</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Billing and Council-comparison refinement release covering modern Council Bill workflows, audited side-by-side comparisons, improved PDF/CSV output, standardized time-of-use presentation, clearer Profile statistics, reactive meter-total integrity, and corrected Network Surcharge handling.</td></tr>
-    <tr><td><strong>AMR-R0008 / LR 2.0</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing and Bills workflows, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger release safeguards.</td></tr>
-    <tr><td><strong>AMR-R0007</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
-    <tr><td><strong>AMR-R0006</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile totals reliability improvement for completed reads that report meter-clock warnings.</td></tr>
-    <tr><td><strong>AMR-R0005</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics.</td></tr>
-    <tr><td><strong>AMR-R0004</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling.</td></tr>
-    <tr><td><strong>AMR-R0003</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Profile totals integrity improvement to ensure updates remain scoped to the intended meter.</td></tr>
-    <tr><td><strong>AMR-R0002</strong></td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor link corrected for the current candidate and production environments.</td></tr>
-    <tr><td><strong>AMR-R0001</strong></td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
+    <tr><td><strong>AMR-R0010 / LR 2.2</strong></td><td>2026-09-09</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger.</td></tr>
+    <tr><td><strong>AMR-R0009 / LR 2.1</strong></td><td>2026-08-31</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Billing and Council-comparison refinement release covering modern Council Bill workflows, audited side-by-side comparisons, improved PDF/CSV output, standardized time-of-use presentation, clearer Profile statistics, reactive meter-total integrity, and corrected Network Surcharge handling.</td></tr>
+    <tr><td><strong>AMR-R0008 / LR 2.0</strong></td><td>2026-08-22</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Major Console release covering billing and Bills workflows, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger release safeguards.</td></tr>
+    <tr><td><strong>AMR-R0007</strong></td><td>2026-08-05</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas2 Profile reading reliability, interval handling, and validated energy scaling improvements.</td></tr>
+    <tr><td><strong>AMR-R0006</strong></td><td>2026-08-03</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile totals reliability improvement for completed reads that report meter-clock warnings.</td></tr>
+    <tr><td><strong>AMR-R0005</strong></td><td>2026-07-31</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics.</td></tr>
+    <tr><td><strong>AMR-R0004</strong></td><td>2026-07-29</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling.</td></tr>
+    <tr><td><strong>AMR-R0003</strong></td><td>2026-07-29</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>Profile totals integrity improvement to ensure updates remain scoped to the intended meter.</td></tr>
+    <tr><td><strong>AMR-R0002</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Comms Monitor link corrected for the current candidate and production environments.</td></tr>
+    <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
 

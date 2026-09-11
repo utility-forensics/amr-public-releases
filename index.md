@@ -17,6 +17,7 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 
 | Release | Date | System Area | Summary |
 |---|---|---|---|
+| **AMR-R0011 / LR 2.3** | 2026-09-11 | AMR Console | Council Bill sliding-block entry completeness improved. Council Bill PDF selection and identity reliability improved. No schema or customer-data migration. |
 | **AMR-R0010 / LR 2.2** | 2026-09-09 | AMR Console | Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger. |
 | **AMR-R0009 / LR 2.1** | 2026-08-31 | AMR Console | Billing and Council-comparison refinement release covering modern Council Bill workflows, side-by-side audited comparisons, improved PDF/CSV output, standardized time-of-use presentation, clearer Profile statistics, reactive meter-total integrity, and corrected City Power Network Surcharge handling. |
 | **AMR-R0008 / LR 2.0** | 2026-08-22 | AMR Console | Major Console release covering billing and Bills workflow improvements, Bill Wizard usability, Profile presentation, formal PDF output, Technical Pages, login/session handling, and stronger production-release safeguards. |
@@ -25,11 +26,9 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 | **AMR-R0005** | 2026-07-31 | AMR Server | Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics. |
 | **AMR-R0004** | 2026-07-29 | AMR Console | Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling. |
 
-### LR 2.2 highlights
+### Council Bill comparison improvements
 
-LR 2.2 is the current AMR Console production release. Sliding-scale energy charges now allocate the full consumption consistently across tariff blocks. Network Surcharge is calculated independently on eligible consumption, and percentage surcharges follow the reconciled charges.
-
-Additional integrity checks prevent a monthly bill from being saved when its energy allocation cannot be reconciled. Provisional calculations remain available for review. Existing saved bills remain unchanged by this release.
+Council Bill sliding-block entry completeness improved. Council Bill PDF selection and identity reliability improved. No schema or customer-data migration.
 
 Earlier releases and their full summaries remain in the [release register](releases.md).
 

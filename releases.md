@@ -82,7 +82,6 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>AMR-R0013 / LR 2.5</strong></td><td>Awaiting confirmation</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Historical maximum-demand quantity, power factor and timestamp now come from one deterministic stored historical record, consistently across normal and provisional calculations.</td></tr>
     <tr><td><strong>AMR-R0012 / LR 2.4</strong></td><td>2026-09-16</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Improved dated time-of-use calendar and season handling, including allocation by interval start, while preserving configured network-access demand minimums.</td></tr>
     <tr><td><strong>AMR-R0011 / LR 2.3</strong></td><td>2026-09-11</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Council Bill sliding-block entry completeness improved. Council Bill PDF selection and identity reliability improved. No schema or customer-data migration.</td></tr>
     <tr><td><strong>AMR-R0010 / LR 2.2</strong></td><td>2026-09-09</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger.</td></tr>
@@ -97,21 +96,6 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
-
----
-
-<h2 class="amr-release-heading">AMR-R0013 / LR 2.5 - Historical maximum-demand provenance consistency</h2>
-
-**Status:** <span class="amr-status">Released</span><br>
-**System area:** AMR Console<br>
-**Release type:** compatible correction<br>
-**Release date:** Awaiting confirmation
-
-LR 2.5 corrects historical maximum-demand selection so the demand quantity, power factor and timestamp come from the same stored historical record within the selected period. Deterministic selection improves consistency across normal and provisional calculations while preserving stored historical demand values.
-
-This release does not change or certify all NAC tariff rules. Broader demand eligibility, history-period and contractual-minimum requirements remain separate follow-up work.
-
-Retrospective draft: the original release date has not yet been established. Date confirmation is required before publication.
 
 ---
 

@@ -17,6 +17,7 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 
 | Release | Date | System Area | Summary |
 |---|---|---|---|
+| **AMR-R0013 / LR 2.6** | 2026-09-28 | AMR Console | Added a Meter History area to the AMR Console so operators can record permanent meter notes and review important meter changes and actions in one place. This improves operational traceability while preserving the existing Meter Edit workflow. |
 | **AMR-R0012 / LR 2.4** | 2026-09-16 | AMR Console | Improved dated time-of-use calendar and season handling, including allocation by interval start, while preserving configured network-access demand minimums. |
 | **AMR-R0011 / LR 2.3** | 2026-09-11 | AMR Console | Council Bill sliding-block entry completeness improved. Council Bill PDF selection and identity reliability improved. No schema or customer-data migration. |
 | **AMR-R0010 / LR 2.2** | 2026-09-09 | AMR Console | Sliding-scale billing improvement: energy is allocated consistently across blocks, Network Surcharge uses the full eligible consumption, and monthly-bill integrity checks are stronger. |
@@ -27,9 +28,9 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 | **AMR-R0005** | 2026-07-31 | AMR Server | Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics. |
 | **AMR-R0004** | 2026-07-29 | AMR Console | Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling. |
 
-### Dated time-of-use and configured demand minimum handling
+### AMR-R0013 / LR 2.6 - Meter Notes and Meter History
 
-Improved dated time-of-use calendar and season handling, including allocation by interval start, while preserving configured network-access demand minimums.
+Added a Meter History area to the AMR Console so operators can record permanent meter notes and review important meter changes and actions in one place. This improves operational traceability while preserving the existing Meter Edit workflow.
 
 Earlier releases and their full summaries remain in the [release register](releases.md).
 

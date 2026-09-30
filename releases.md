@@ -82,6 +82,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0014 / LR 2.7</strong></td><td>2026-09-30</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Communication Monitor can be reopened reliably after editing a meter, supporting repeated use without refreshing the Console. Existing meter history and action auditing are preserved.</td></tr>
     <tr><td><strong>AMR-R0013 / LR 2.6</strong></td><td>2026-09-28</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Added a Meter History area to the AMR Console so operators can record permanent meter notes and review important meter changes and actions in one place. This improves operational traceability while preserving the existing Meter Edit workflow.</td></tr>
     <tr><td><strong>AMR-R0012 / LR 2.4</strong></td><td>2026-09-16</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Improved dated time-of-use calendar and season handling, including allocation by interval start, while preserving configured network-access demand minimums.</td></tr>
     <tr><td><strong>AMR-R0011 / LR 2.3</strong></td><td>2026-09-11</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Council Bill sliding-block entry completeness improved. Council Bill PDF selection and identity reliability improved. No schema or customer-data migration.</td></tr>
@@ -97,6 +98,17 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0014 / LR 2.7 — Communication Monitor reliability</h2>
+
+**Status:** <span class="amr-status">Released</span><br>
+**System area:** AMR Console<br>
+**Release type:** minor compatible reliability update<br>
+**Release date:** 2026-09-30
+
+Communication Monitor can be reopened reliably after editing a meter, supporting repeated use without refreshing the Console. Existing meter history and action auditing are preserved.
 
 ---
 

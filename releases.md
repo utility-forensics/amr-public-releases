@@ -82,6 +82,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0016 / LR2.9</strong></td><td>2026-10-08</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile.</td></tr>
     <tr><td><strong>AMR-R0015</strong></td><td>2026-09-30</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas and Atlas2 Profile reading now keeps interval values aligned with the correct meter record. Validated support for additional multi-channel records and checks for unsupported formats improve the reliability of newly collected Profile data.</td></tr>
     <tr><td><strong>AMR-R0014 / LR 2.7</strong></td><td>2026-09-30</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Communication Monitor can be reopened reliably after editing a meter, supporting repeated use without refreshing the Console. Existing meter history and action auditing are preserved.</td></tr>
     <tr><td><strong>AMR-R0013 / LR 2.6</strong></td><td>2026-09-28</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Added a Meter History area to the AMR Console so operators can record permanent meter notes and review important meter changes and actions in one place. This improves operational traceability while preserving the existing Meter Edit workflow.</td></tr>
@@ -99,6 +100,17 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0016 / LR2.9 — Summation billing fixed charges</h2>
+
+**Status:** <span class="amr-status">Released</span><br>
+**System area:** AMR Console<br>
+**Release type:** Billing correction<br>
+**Release date:** 2026-10-08
+
+Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile.
 
 ---
 

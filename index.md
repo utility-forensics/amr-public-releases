@@ -17,6 +17,7 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 
 | Release | Date | System Area | Summary |
 |---|---|---|---|
+| **AMR-R0017** | 2026-10-08 | AMR Console — Billing | Bill Comparison PDFs use a separate output for each selected bill and rendering. Moving between billing months preserves earlier comparison PDFs, so a retained print link continues to show the intended bill. Billing calculations and report layout are unchanged. |
 | **AMR-R0016 / LR2.9** | 2026-10-08 | AMR Console | Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile. |
 | **AMR-R0015** | 2026-09-30 | AMR Server | EDMI Atlas and Atlas2 Profile reading now keeps interval values aligned with the correct meter record. Validated support for additional multi-channel records and checks for unsupported formats improve the reliability of newly collected Profile data. |
 | **AMR-R0014 / LR 2.7** | 2026-09-30 | AMR Console | Communication Monitor can be reopened reliably after editing a meter, supporting repeated use without refreshing the Console. Existing meter history and action auditing are preserved. |
@@ -31,9 +32,9 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 | **AMR-R0005** | 2026-07-31 | AMR Server | Metcom Profile continuity improvement across valid meter outage/gap conditions, with stronger communications diagnostics. |
 | **AMR-R0004** | 2026-07-29 | AMR Console | Comms Monitor and Profile reload improvements, including a selectable Profile start date and improved request handling. |
 
-### AMR-R0016 / LR2.9 — Summation billing fixed charges
+### AMR-R0017 — Bill Comparison prints the selected bill
 
-Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile.
+Bill Comparison PDFs use a separate output for each selected bill and rendering. Moving between billing months preserves earlier comparison PDFs, so a retained print link continues to show the intended bill. Billing calculations and report layout are unchanged.
 
 Earlier releases and their full summaries remain in the [release register](releases.md).
 

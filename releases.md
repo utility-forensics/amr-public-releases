@@ -82,6 +82,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0018 / LR2.12</strong></td><td>2026-10-25</td><td><span class="amr-status">Released</span></td><td>AMR Console billing</td><td>AMR Console now calculates summation demand from member readings at matching times and keeps monthly demand separate from historical Network Access Charge demand. Historical demand selection follows the applicable configured eligibility rules.<br><br>Billing calculations retain their provenance through preparation and saving. Account membership changes show a warning about their effect on historical demand, and unsupported manual summation billing routes are restricted.</td></tr>
     <tr><td><strong>AMR-R0017</strong></td><td>2026-10-08</td><td><span class="amr-status">Released</span></td><td>AMR Console — Billing</td><td>Bill Comparison PDFs use a separate output for each selected bill and rendering. Moving between billing months preserves earlier comparison PDFs, so a retained print link continues to show the intended bill. Billing calculations and report layout are unchanged.</td></tr>
     <tr><td><strong>AMR-R0016 / LR2.9</strong></td><td>2026-10-08</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile.</td></tr>
     <tr><td><strong>AMR-R0015</strong></td><td>2026-09-30</td><td><span class="amr-status">Released</span></td><td>AMR Server</td><td>EDMI Atlas and Atlas2 Profile reading now keeps interval values aligned with the correct meter record. Validated support for additional multi-channel records and checks for unsupported formats improve the reliability of newly collected Profile data.</td></tr>
@@ -101,6 +102,19 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0018 — AMR Console LR2.12 — Summation demand and historical NAC</h2>
+
+**Status:** <span class="amr-status">Released</span><br>
+**System area:** AMR Console billing<br>
+**Release type:** Financial correctness and workflow safeguards<br>
+**Release date:** 2026-10-25
+
+AMR Console now calculates summation demand from member readings at matching times and keeps monthly demand separate from historical Network Access Charge demand. Historical demand selection follows the applicable configured eligibility rules.
+
+Billing calculations retain their provenance through preparation and saving. Account membership changes show a warning about their effect on historical demand, and unsupported manual summation billing routes are restricted.
 
 ---
 

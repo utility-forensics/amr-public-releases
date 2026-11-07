@@ -17,6 +17,7 @@ It intentionally excludes customer names, account numbers, meter identifiers, in
 
 | Release | Date | System Area | Summary |
 |---|---|---|---|
+| **AMR-R0019 / LR2.14** | 2026-11-07 | Billing and Meter Summary | For summation accounts, sliding tariff blocks are applied once to the account’s weighted consumption. Meter Summary shows the account’s usage alongside member readings. Existing bills use their recorded consumption where it can be established. |
 | **AMR-R0018 / LR2.12** | 2026-10-25 | AMR Console billing | AMR Console now calculates summation demand from member readings at matching times and keeps monthly demand separate from historical Network Access Charge demand. Historical demand selection follows the applicable configured eligibility rules.<br><br>Billing calculations retain their provenance through preparation and saving. Account membership changes show a warning about their effect on historical demand, and unsupported manual summation billing routes are restricted. |
 | **AMR-R0017** | 2026-10-08 | AMR Console — Billing | Bill Comparison PDFs use a separate output for each selected bill and rendering. Moving between billing months preserves earlier comparison PDFs, so a retained print link continues to show the intended bill. Billing calculations and report layout are unchanged. |
 | **AMR-R0016 / LR2.9** | 2026-10-08 | AMR Console | Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile. |

@@ -82,6 +82,7 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><th>Release</th><th>Release Date</th><th>Status</th><th>System Area</th><th>Summary</th></tr>
   </thead>
   <tbody>
+    <tr><td><strong>AMR-R0019 / LR2.14</strong></td><td>2026-11-07</td><td><span class="amr-status">Released</span></td><td>Billing and Meter Summary</td><td>For summation accounts, sliding tariff blocks are applied once to the account’s weighted consumption. Meter Summary shows the account’s usage alongside member readings. Existing bills use their recorded consumption where it can be established.</td></tr>
     <tr><td><strong>AMR-R0018 / LR2.12</strong></td><td>2026-10-25</td><td><span class="amr-status">Released</span></td><td>AMR Console billing</td><td>AMR Console now calculates summation demand from member readings at matching times and keeps monthly demand separate from historical Network Access Charge demand. Historical demand selection follows the applicable configured eligibility rules.<br><br>Billing calculations retain their provenance through preparation and saving. Account membership changes show a warning about their effect on historical demand, and unsupported manual summation billing routes are restricted.</td></tr>
     <tr><td><strong>AMR-R0017</strong></td><td>2026-10-08</td><td><span class="amr-status">Released</span></td><td>AMR Console — Billing</td><td>Bill Comparison PDFs use a separate output for each selected bill and rendering. Moving between billing months preserves earlier comparison PDFs, so a retained print link continues to show the intended bill. Billing calculations and report layout are unchanged.</td></tr>
     <tr><td><strong>AMR-R0016 / LR2.9</strong></td><td>2026-10-08</td><td><span class="amr-status">Released</span></td><td>AMR Console</td><td>Daily and monthly fixed charges on summation bills now use the billing period once. Consumption remains aggregated across meters, and demand continues to be calculated from the combined profile.</td></tr>
@@ -102,6 +103,17 @@ It is intentionally non-technical and does not include customer names, account n
     <tr><td><strong>AMR-R0001</strong></td><td>2026-06-28</td><td><span class="amr-status">Released</span></td><td>AMR Server / Database</td><td>Meter reading processing performance improvement.</td></tr>
   </tbody>
 </table>
+
+---
+
+<h2 class="amr-release-heading">AMR-R0019 — AMR Console LR2.14 — Summation billing and meter readings</h2>
+
+**Status:** <span class="amr-status">Released</span><br>
+**System area:** Billing and Meter Summary<br>
+**Release type:** Billing correction and presentation improvement<br>
+**Release date:** 2026-11-07
+
+For summation accounts, sliding tariff blocks are applied once to the account’s weighted consumption. Meter Summary shows the account’s usage alongside member readings. Existing bills use their recorded consumption where it can be established.
 
 ---
 
